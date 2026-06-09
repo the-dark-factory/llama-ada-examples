@@ -5,6 +5,7 @@ authors = ["The Dark Factory Ltd"]
 maintainers = ["Tony Gair <tony.gair@thedarkfactory.co.uk>"]
 maintainers-logins = ["tonygair"]
 licenses = "Apache-2.0"
+website = "https://github.com/the-dark-factory/llama-ada-examples"
 tags = ["llama", "llm", "ai", "examples"]
 project-files = ["examples/mind/mind.gpr", "examples/run/run.gpr"]
 
