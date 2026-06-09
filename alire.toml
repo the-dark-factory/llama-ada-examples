@@ -1,0 +1,15 @@
+name = "df_llama_examples"
+description = "Examples for df_llama, the Ada binding to llama.cpp"
+version = "0.1.0"
+authors = ["The Dark Factory Ltd"]
+maintainers = ["Tony Gair <tony.gair@thedarkfactory.co.uk>"]
+maintainers-logins = ["tonygair"]
+licenses = "Apache-2.0"
+tags = ["llama", "llm", "ai", "examples"]
+project-files = ["examples/mind/mind.gpr", "examples/run/run.gpr"]
+
+[[depends-on]]
+df_llama = "*"
+
+[[pins]]
+df_llama = { url = "https://github.com/the-dark-factory/llama-ada" }

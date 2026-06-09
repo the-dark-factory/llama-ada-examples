@@ -1,0 +1,7 @@
+alire/
+obj/
+bin/
+models/
+*.gguf
+mind.svg
+config/

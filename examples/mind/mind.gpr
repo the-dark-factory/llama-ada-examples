@@ -1,0 +1,16 @@
+--  The mind-watcher example, built against the df_llama binding (its
+--  Linker_Options pull in llama.cpp / ggml + the platform frameworks). Run from
+--  the crate root so the model path (models/*.gguf) resolves.
+
+with "df_llama.gpr";
+
+project Mind is
+   for Source_Dirs use (".");
+   for Object_Dir  use "obj";
+   for Exec_Dir    use "bin";
+   for Main        use ("mind.adb");
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnat2022", "-O2", "-g");
+   end Compiler;
+end Mind;
